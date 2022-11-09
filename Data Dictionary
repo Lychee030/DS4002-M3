@@ -1,0 +1,16 @@
+The data is retrieved from the Kaggle website as image data.
+There are 12 columns total of emoji characters, unicodes, positive, negative, and neutral rating, 
+occurrences, positions, sentiment score, and sentiment bar. (There are a couple empty columns)
+There are 752 observations total. 
+
+The dataset not only contains emoticons, but also includes pictographs, miscellaneous symbols, and others. 
+
+Characters: a picture of the emoji observation
+unicodes: the unique code assigned to each observation
+occurrences: number of occurrences for each character
+position: ?
+sentiment score: a rating of -1 to 1, a higher number means higher positivity sentiment
+sentiment bar: empty column
+positive: positivity rating
+negative: negativity rating
+neutral: neutral sentiment rating
