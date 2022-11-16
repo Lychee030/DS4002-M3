@@ -20,6 +20,7 @@ Even though emojis are widely used to provide a reaction through digital communi
 
 ## HYPOTHESIS[![](./images/pin.svg)](#hypothesis)
 In the top 50 most used emojis in the world, at least 50% of them denote more positive feelings than negative feelings, with a sentiment score above 0 on a scale from -1 to 1. Additionally, the correlation between the popularity of emojis and their sentiment scores are greater than 0.5. 
+
 ---
 
 ## SRC[![](./images/pin.svg)](#src)
