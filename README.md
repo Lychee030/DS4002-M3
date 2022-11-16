@@ -73,5 +73,7 @@ The equation of trained linear regression model is log(occurences) = 1.25 * sent
 ---
 
 ## REFERENCES
+[1] Berengueres, J. (2017, October 1). Emoji sentiment. Kaggle. Retrieved November 9, 2022, from https://www.kaggle.com/datasets/harriken/emoji-sentiment?select=ijstable.csv 
+[2] W. Rowe, “Mean Square Error & R2 Score Clearly Explained,” BMC Blogs. https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/#:~:text=There%20is%20no%20correct%20value 
 ## links to MI 1 and 2
 https://github.com/Lychee030/DS4002-M3/blob/main/M3-2%20Data%20Analysis.pdf
