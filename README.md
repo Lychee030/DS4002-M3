@@ -62,3 +62,5 @@
 ---
 
 ## REFERENCES
+## links to MI 1 and 2
+https://github.com/Lychee030/DS4002-M3/blob/main/M3-2%20Data%20Analysis.pdf
