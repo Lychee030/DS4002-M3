@@ -36,7 +36,7 @@ One would want to use our code to replicate and verify our results, or to possib
 
 ---
 ## DATA[![](./images/pin.svg)](#data)
-
+The data is retrieved from the Kaggle website as image data. There are 12 columns total, but our analysis focus is limited to  the emoji observations, the occurrences, negative, neutral, positive and sentiment ratings. There are 752 observations total. Some questions we explored through the graphical analysis below were: What variables could be quantified numerically or categorically for analysis, what was the distribution of positive sentiment among the top 50 most used emojis, what was the score distribution by occurrence, and the linear regression for sentiment occurrence by sentiment scores. Some refinements to the hypothesis arose, as we had to make sure that there would be enough observations across the entire distribution that we analyzed (from -1 to 1 for positive sentiment). The dataset not only contains emoticons, but also includes pictographs, miscellaneous symbols, and others. Therefore, the first thing we did was to filter emojis based on their unicode.block. Then, we found 76 emoticons and limited them to the top 50 most used emoticons. Also, our goal is to find the correlation between occurrence of emoji and their sentiment scores. The number of occurrences could be really different. Thus, we analyzed log(occurrences) for our project instead. The sentiment score is calculated by ((1 * number of positive votes) + (-1 * number of negative votes)) / total number of votes.
 
 ---
 
