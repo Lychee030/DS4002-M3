@@ -36,6 +36,8 @@ One would want to use our code to replicate and verify our results, or to possib
 
 ---
 ## DATA[![](./images/pin.svg)](#data)
+https://github.com/Lychee030/DS4002-M3/tree/main/data
+
 
 
 ---
