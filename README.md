@@ -26,11 +26,11 @@ In the top 50 most used emojis in the world, at least 50% of them denote more po
 ![made-with-R](https://img.shields.io/badge/Made%20with-R-1f425f.svg)<br>
 
 ### Installing/Building Code
-
+First, one must make sure that R and RStudio are installed on their system. Then, you can download the script from our src folder, along with the dataset in the data folder. Make sure that the files are saved into the same directory and change the working directory to where the files are located. Finally, you can click run to view the outputs of the code locally.
 
 
 ### Usage of Code
-
+One would want to use our code to replicate and verify our results, or to possibly run further analysis on our dataset.
 
 
 ---
@@ -51,7 +51,7 @@ In the top 50 most used emojis in the world, at least 50% of them denote more po
 
 
 ### ** Pie Chart: **
-
+[![](./figures/emoticon_pie.png)]
 
 ### ** Scatterplot: **
 
