@@ -44,8 +44,9 @@ In the top 50 most used emojis in the world, at least 50% of them denote more po
 
 ### **Figures Table**
 * Modified Data Table
-
-
+* Pie Chart - Do the Top 50 Most Used Emoticons Denote More Positive Feeling?
+* Scatter plot - The Correlation of Sentiment Scores and Occurences
+* Linear Regression Model
 
 
 ### **Data Set - Modified:**
@@ -53,7 +54,8 @@ In the top 50 most used emojis in the world, at least 50% of them denote more po
 The data set is modified so that it only contains information for each emoticon. An emoticon, short for "emotion icon", is more widely used to express one's feeling.
 
 ### **Pie Chart:**
-
+![](./figures/emoticon_pie.png)
+To analyze whether or not at least 50% of the top 50 most used emoticons denote more positive feelings than negative feelings, we first made a pie chart. It is quite surprising to see that there are no emoticons with a sentiment score of 0. However, from the result, we can conclude that at least 50% of them have sentiment scores greater than 0 on a scale from -1 to 1, which means that they are more commonly used accompanied with positive texts. 
 
 ### **Scatterplot:**
 ![](./figures/score_and_occur.png)
