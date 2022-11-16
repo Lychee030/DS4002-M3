@@ -49,15 +49,15 @@
 
 
 
-### ** Graph 1: **
+### ** Data Set - Modified: **
 
 
-### ** Graph 2: **
+### ** Pie Chart: **
 
 
-### ** Scatterplot 1: **
+### ** Scatterplot: **
 
-### ** Scatterplot 2: **
+### ** Linear Regression Model: **
 
 ---
 

@@ -1,0 +1,60 @@
+---
+title: "Project3"
+author: "Emily Feng"
+date: "11/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+```{r}
+emoji <- read.csv("C:\\Users\\emily\\Desktop\\Emoji_Sentiment_Data_v1.0.csv", encoding = "UTF-8")
+emoji$occur <- with(emoji, log(Occurrences))
+emoji$score <- with(emoji, (Positive-Negative)/Occurrences)
+emoji <- emoji[emoji$Unicode.block=="Emoticons",]
+emoji <- emoji[1:50,]
+shuffled_emoji= emoji[sample(1:nrow(emoji)), ]
+train_data <- shuffled_emoji[1:40,]
+test_data <- shuffled_emoji[41:50,]
+```
+
+## Data Discovering
+```{r}
+library(ggplot2)
+label = emoji$Emoji
+ggplot(emoji,aes(score, occur)) + geom_point() + geom_label(label=label) + 
+  theme_bw() + 
+  labs(title = "The Correlation of Sentiment Scores and Occurrences", 
+       y = "Occurences", x = "Sentiment Scores") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r}
+library(RColorBrewer)
+myPalette <- brewer.pal(5, "Set2") 
+pos <- emoji[emoji$score>0,]
+neu <- emoji[emoji$score==0,]
+neg <- emoji[emoji$score<0,]
+percentage <- c(nrow(pos),nrow(neu),nrow(neg))
+pie(percentage, labels=c("score>0", "score=0", "score<0"), border="white", 
+    col=myPalette) + title("Do the Top 50 Most Used Emoticons \n Denote More Positive Feeling?")
+```
+
+## Linear Regression
+
+```{r}
+lr = lm(occur~score,data=train_data)
+ggplot(train_data,aes(score, occur)) + geom_point() + 
+  geom_smooth(method="lm", se=F, color="darkturquoise") +
+  labs(title= "Linear Regression on Training Data",
+           x= "sentiment score",y= "log(# of occurences)") +
+  theme(plot.title = element_text(hjust = 0.5))
+summary(lr)
+p <- predict(lr,test_data)
+mean((test_data$occur - p)^2)
+lr
+```
