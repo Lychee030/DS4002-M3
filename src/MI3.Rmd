@@ -29,7 +29,7 @@ label = emoji$Emoji
 ggplot(emoji,aes(score, occur)) + geom_point() + geom_label(label=label) + 
   theme_bw() + 
   labs(title = "The Correlation of Sentiment Scores and Occurrences", 
-       y = "Occurences", x = "Sentiment Scores") +
+       y = "log(occurences)", x = "Sentiment Scores") +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 

@@ -8,8 +8,7 @@ The dataset not only contains emoticons, but also includes pictographs, miscella
 Characters: a picture of the emoji observation
 unicodes: the unique code assigned to each observation
 occurrences: number of occurrences for each character
-position: ?
-sentiment score: a rating of -1 to 1, a higher number means higher positivity sentiment
+position: the position of the emoji in all emojis
 sentiment bar: empty column
 positive: positivity rating
 negative: negativity rating
